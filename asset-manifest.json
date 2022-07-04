@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/noteListApp-React/static/css/main.5988d343.css",
-    "main.js": "/noteListApp-React/static/js/main.754b8f0d.js",
+    "main.css": "/noteListApp-React/static/css/main.abbafa81.css",
+    "main.js": "/noteListApp-React/static/js/main.bd11f52c.js",
     "index.html": "/noteListApp-React/index.html",
-    "main.5988d343.css.map": "/noteListApp-React/static/css/main.5988d343.css.map",
-    "main.754b8f0d.js.map": "/noteListApp-React/static/js/main.754b8f0d.js.map"
+    "main.abbafa81.css.map": "/noteListApp-React/static/css/main.abbafa81.css.map",
+    "main.bd11f52c.js.map": "/noteListApp-React/static/js/main.bd11f52c.js.map"
   },
   "entrypoints": [
-    "static/css/main.5988d343.css",
-    "static/js/main.754b8f0d.js"
+    "static/css/main.abbafa81.css",
+    "static/js/main.bd11f52c.js"
   ]
 }
