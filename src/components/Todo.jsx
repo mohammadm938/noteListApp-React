@@ -1,6 +1,6 @@
 const Todo = ({ todo, onCompleteHandler, onDeleteHandler, onEdit }) => {
   return (
-    <div className="flex flex-col justify-center items-center bg-slate-200 text-black p-4 w-1/2 space-y-8  ">
+    <div className="flex flex-col justify-center items-center bg-slate-200 text-black p-4 w-full md:w-1/2 space-y-8  ">
       <div
         className={`${
           todo.isCompleted === true && "line-through text-gray-500"

@@ -1,6 +1,6 @@
 const NavBar = ({ unCompletedTodos }) => {
   return (
-    <header className="bg-slate-600 font-bold rounded-md flex flex-row justify-center items-center mb-6 space-x-2  p-2 w-1/4">
+    <header className="bg-slate-600 font-bold rounded-md flex flex-row justify-center items-center mb-6 space-x-2 p-2 w-full md:w-1/4 lg:text-base text-sm">
       {!unCompletedTodos ? (
         <p>Write your today todos</p>
       ) : (

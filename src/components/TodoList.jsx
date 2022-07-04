@@ -21,7 +21,7 @@ const TodoList = ({
 
   const renderTodos = () => {
     return (
-      <div className="flex flex-col justify-center items-center space-y-4 bg-slate-600 p-4 w-3/4 max-w-3xl  shadow-xl rounded-md mt-8">
+      <div className="flex flex-col justify-center items-center space-y-4 bg-slate-600 p-4 w-full lg:w-3/4 max-w-3xl  shadow-xl rounded-md mt-8 text-sm lg:text-base">
         <select
           className="p-2 bg-slate-800 rounded-md"
           onChange={onSelectHandler}
@@ -32,7 +32,7 @@ const TodoList = ({
           <option value="Uncomplete">Uncomplete</option>
         </select>
         {todos.length === 0 ? (
-          <p className="bg-slate-700 p-2 w-1/2 flex justify-center items-center font-bold drop-shadow-md">
+          <p className="bg-slate-700 p-2 w-full md:w-1/2 flex justify-center items-center font-bold drop-shadow-md">
             Add some todos
           </p>
         ) : (
