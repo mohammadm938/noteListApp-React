@@ -18,28 +18,33 @@ const TodoList = ({
   };
 
   const renderTodos = () => {
-    if (todos.length === 0) return <p>add some todos</p>;
     return (
       <div className="flex flex-col justify-center items-center space-y-4 bg-slate-600 p-4 w-3/4 max-w-3xl  shadow-xl rounded-md mt-8">
-        {todos.map((todo) => {
-          return (
-            <Todo
-              key={todo.id}
-              todo={todo}
-              onCompleteHandler={() => onCompleteHandler(todo.id)}
-              onDeleteHandler={() => onDeleteHandler(todo.id)}
-              onEdit={() => {
-                setEdit(todo);
-                setIsEditingState(true);
-              }}
-            />
-          );
-        })}
+        {todos.length === 0 ? (
+          <p className="bg-slate-700 p-2 w-1/2 flex justify-center items-center font-bold drop-shadow-md">
+            Add some todos
+          </p>
+        ) : (
+          todos.map((todo) => {
+            return (
+              <Todo
+                key={todo.id}
+                todo={todo}
+                onCompleteHandler={() => onCompleteHandler(todo.id)}
+                onDeleteHandler={() => onDeleteHandler(todo.id)}
+                onEdit={() => {
+                  setEdit(todo);
+                  setIsEditingState(true);
+                }}
+              />
+            );
+          })
+        )}
       </div>
     );
   };
   return edit.id ? (
-    <TodoForm addTodoHandler={submitTodo} edit={edit.text} />
+    <TodoForm addTodoHandler={submitTodo} edit={edit} />
   ) : (
     renderTodos()
   );

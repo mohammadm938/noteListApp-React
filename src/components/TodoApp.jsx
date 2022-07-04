@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NavBar from "./Navbar";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 const TodoApp = () => {
@@ -39,6 +40,9 @@ const TodoApp = () => {
 
   return (
     <div className="flex flex-col items-center bg-slate-700 h-screen p-4 text-white">
+      <NavBar
+        unCompletedTodos={todos.filter((t) => t.isCompleted === false).length}
+      />
       {isEditing === false ? (
         <TodoForm addTodoHandler={addTodoHandler} />
       ) : null}
