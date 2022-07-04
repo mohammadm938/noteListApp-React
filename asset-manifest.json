@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/noteListApp/static/css/main.5988d343.css",
+    "main.js": "/noteListApp/static/js/main.754b8f0d.js",
+    "index.html": "/noteListApp/index.html",
+    "main.5988d343.css.map": "/noteListApp/static/css/main.5988d343.css.map",
+    "main.754b8f0d.js.map": "/noteListApp/static/js/main.754b8f0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5988d343.css",
+    "static/js/main.754b8f0d.js"
+  ]
+}
